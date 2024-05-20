@@ -1,0 +1,130 @@
+:root {
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    /* colors */
+    --primary-color: #bfecff;
+    --secondary-color: #525b0f;
+    --tertiary-color: #a4b8c4;
+    --light-grey: #d0d0d0;
+    --dark-grey: #303030;
+  
+    /* sizes */
+    --font-base: 18px;
+    --small-font: 0.8em;
+    --large-font: 1.2em;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    color: var(--dark-grey);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+ 
+  .mission {
+    padding: 0 0.5em;
+    /* margin: 0.5em 0; */
+    line-height: 1.3;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .divider {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  /*continent grid styles*/
+
+  .continent-grid {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark-grey);
+    padding-left: 0;
+  }
+  
+  .continent-grid > li {
+    width: 150px;
+    /* border: 1px solid var(--light-grey); */
+    padding: 0.5em;
+    margin: 1em;
+  }
+  .continent-grid h2 {
+    margin: 0;
+  
+    font-size: 1.2em;
+  }
+  .continent-grid a {
+    text-decoration: none;
+  }
+  .continent-grid a:link,
+  .continent-grid a:visited {
+    color: var(--dark-grey);
+  }
+  .continent-grid a:hover {
+    text-decoration: underline;
+  }
+  .continent {
+    padding: 0.5em;
+  }
+
+  /*Newsletter*/
+
+  .newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .newsletter h2 {
+    margin-bottom: 10px;
+  }
+  
+  #newsletter-form {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #newsletter-form input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  #newsletter-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #newsletter-form button:hover {
+    background-color: #0056b3;
+  }
+
+  @media screen and (min-width: 500px) {
+    body {
+      max-width: 1080px;
+      margin: auto;
+    }
+    .mission {
+      font-size: 1.2em;
+    }
+    
+  }
+  
