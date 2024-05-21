@@ -16,7 +16,54 @@
   * {
     box-sizing: border-box;
   }
+  /*-----------------------------header-----------------*/
+  #main-header{
+    height: 300px;
+    background-color: var(--secondary-color);
+    width: 100%;
+  }
+  header h1{
+    color: white;
+    font-size: xxx-large;
+    margin: 0px;
+    justify-self: baseline;
+    align-self: center;
+    grid-column: 1/4;
+    margin-left: 45px;
+  }
+  #earth{
+    justify-self: center;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    background: #888 url(https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2005/05/envisat_mosaic_may_-_november_2004/9695811-3-eng-GB/Envisat_mosaic_May_-_November_2004_pillars.jpg) 0 0 repeat;
+    border-radius: 50%;
+    background-size: 535px;
+    animation: rotate 10s linear infinite;
+    transition: transform 200ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0px 80px 6px rgb(0, 0, 0);
+    color: #000;
+    grid-column: 4/5;
+    
+  }
+  .divider-head {
+    border-bottom: 10px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+  }
 
+
+
+  @keyframes rotate {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 630px 0px;
+    }
+  }
+  /*------------------------------header end--------------*/
   body {
     margin: 0;
     font-family: var(--font-body);
@@ -36,11 +83,15 @@
     max-width: 600px;
     margin: auto;
   }
-  
-  .divider {
-    border-bottom: 2px solid var(--primary-color);
+  .hero{
+    display: grid;
   }
-
+  #heroimage{
+    justify-self: center;
+  }
+  .divider{
+    border-bottom: 10px solid var(--primary-color);
+  }
   /*continent grid styles*/
 
   .continent-grid {
@@ -145,7 +196,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 500px) and (max-width: 1300px) {
     body {
       max-width: 1080px;
       margin: auto;
