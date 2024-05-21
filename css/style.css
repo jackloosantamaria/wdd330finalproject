@@ -117,6 +117,34 @@
     background-color: #0056b3;
   }
 
+  /**********North America Second HTML*****************/
+
+  .continent-grid2 {
+    list-style-type: none;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark-grey);
+    padding-left: 0;
+  }
+  
+  .continent-grid2 > li {
+    /* width: 150px; */
+    /* border: 1px solid var(--light-grey); */
+    padding: 0.5em;
+    margin: 1em;
+  }
+  .continent-grid2 h2 {
+    margin: 0;
+  
+    font-size: 1.2em;
+  }
+
+  h1{
+    text-align: center;
+  }
+
   @media screen and (min-width: 500px) {
     body {
       max-width: 1080px;
@@ -124,6 +152,23 @@
     }
     .mission {
       font-size: 1.2em;
+    }
+
+    .continent-grid2 {
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      color: var(--dark-grey);
+      padding-left: 0;
+    }
+
+    .continent-grid2 > li {
+      width: 350px;
+      /* border: 1px solid var(--light-grey); */
+      padding: 0.5em;
+      margin: 1em;
     }
     
   }
