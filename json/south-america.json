@@ -25,7 +25,7 @@
             "name": "Peru",
             "capital": "Lima",
             "language": "Spanish",
-            "image": "images/peru.svg"
+            "image": "../images/peru.svg"
         },
 
         {

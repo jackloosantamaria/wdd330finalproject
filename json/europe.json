@@ -11,7 +11,7 @@
             "name": "France",
             "capital": "Paris",
             "language": "French",
-            "image": "..images/france.svg"
+            "image": "../images/france.svg"
         },
 
         {
