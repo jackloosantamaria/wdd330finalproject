@@ -1,4 +1,4 @@
-async function loadTemplate(path) {
+export async function loadTemplate(path) {
     const res = await fetch(path);
     if (!res.ok) {
       throw new Error(`Failed to load template from ${path}`);
@@ -7,7 +7,7 @@ async function loadTemplate(path) {
     return template;
 }
   
-function renderWithTemplate(template, parentElement, data, callback) {
+export function renderWithTemplate(template, parentElement, data, callback) {
     parentElement.innerHTML = template;
     //if there is a callback...call it and pass data
     if (callback) {
