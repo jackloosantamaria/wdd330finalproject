@@ -1,5 +1,5 @@
 import { loadContinentData } from "./loadData.mjs";
-
+import { loadHeaderFooter } from "./utils.mjs";
 
 document.addEventListener("DOMContentLoaded", function(){
     const params = new URLSearchParams(window.location.search);
@@ -12,3 +12,4 @@ function capitalizeFirstLetter(string){
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+loadHeaderFooter();

@@ -15,7 +15,7 @@ function renderWithTemplate(template, parentElement, data, callback) {
     }
 }
   
-async function loadHeaderFooter() {
+export async function loadHeaderFooter() {
     try {
       const headerTemplate = await loadTemplate("../public/header.html");
       const headerElement = document.querySelector("#main-header");
