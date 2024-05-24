@@ -17,9 +17,12 @@ export function renderWithTemplate(template, parentElement, data, callback) {
   
 export async function loadHeaderFooter() {
     try {
-      const headerTemplate = await loadTemplate("../public/header.html");
+      const pathParts = window.location.pathname.split('/');
+      const basePath = pathParts.includes('country-list') ? '../public/' : './public/';
+      
+      const headerTemplate = await loadTemplate(basePath + "header.html");
       const headerElement = document.querySelector("#main-header");
-      const footerTemplate = await loadTemplate("../public/footer.html");
+      const footerTemplate = await loadTemplate(basePath + "footer.html");
       const footerElement = document.querySelector("#main-footer");
   
       renderWithTemplate(headerTemplate, headerElement);
