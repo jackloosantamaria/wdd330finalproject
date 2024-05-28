@@ -227,19 +227,21 @@
 
     .continent-grid2 {
       
-      display: flex;
-      flex-wrap: wrap;
+      display: grid ;
+      /* flex-wrap: wrap; */
+      grid-template-columns: 1fr 1fr;
       justify-content: center;
       text-align: center;
       color: var(--dark-grey);
       padding-left: 0;
+      
     }
 
     .continent-grid2 > li {
       width: 350px;
       /* border: 1px solid var(--light-grey); */
       padding: 0.5em;
-      margin: 1em;
+      margin: 3em;
     }
     
   }
