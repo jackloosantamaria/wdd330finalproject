@@ -1,6 +1,8 @@
 import { loadHeaderFooter } from "./utils.mjs";
 
+
 loadHeaderFooter();
+
 
 console.log("Newsletter script loaded");
 document.getElementById("newsletter-form").addEventListener("submit", function(event) {
@@ -9,3 +11,4 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
 
     alert("Thank you for subscribing!");
 });
+
