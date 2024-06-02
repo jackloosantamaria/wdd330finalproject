@@ -20,27 +20,27 @@
   /************Header*************/
 
   #main-header{
-    height: 300px;
-    background-color: var(--secondary-color);
+    /* height: 300px; */
+    background-color: var(--primary-color);
     width: 100%;
   }
   header h1{
-    color: white;
+    color: var(--dark-grey);
     font-size: xxx-large;
     margin: 0px;
     justify-self: baseline;
     align-self: center;
     grid-column: 1/4;
-    margin-left: 45px;
+    /* margin-left: 45px; */
   }
-  #earth{
+  /* #earth{
     justify-self: center;
     align-self: center;
     height: 250px;
-    width: 250px;
+    width: 350px;
     background: #888 url(https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2005/05/envisat_mosaic_may_-_november_2004/9695811-3-eng-GB/Envisat_mosaic_May_-_November_2004_pillars.jpg) 0 0 repeat;
-    border-radius: 50%;
-    background-size: 535px;
+    border-radius: 0;
+    background-size: 955px;
     animation: rotate 10s linear infinite;
     transition: transform 200ms linear;
     transform-style: preserve-3d;
@@ -48,13 +48,13 @@
     color: #000;
     grid-column: 4/5;
     
-  }
+  } */
   .divider-head {
-    border-bottom: 10px solid var(--primary-color);
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
+    border-bottom: 10px solid var(--light-grey);
+    /* display: grid;
+    grid-template-columns: repeat(7,1fr); */
   }
-  #favorites{
+  /* #favorites{
     grid-column: 7/8;
     justify-self: end;
     font-size: 50px;
@@ -65,16 +65,16 @@
   #favorites:hover{
     font-size: 70px;
     margin: 0px;
-  }
+  } */
 
 
 
   @keyframes rotate {
     0%{
-      background-position: 0 0;
+      transform: translateX(-100%);
     }
     100%{
-      background-position: 630px 0px;
+      transform: translateX(100%)
     }
   }
 
@@ -103,13 +103,18 @@
 
   .hero{
     display: grid;
+    
   }
   #heroimage{
     justify-self: center;
+    animation: rotate 10s linear infinite;
+    transition: transform 200ms linear;
   }
   
+
+
   .divider {
-    border-bottom: 10px solid var(--primary-color);
+    border-bottom: 10px solid var(--light-grey);
   }
 
   /*continent grid styles*/
@@ -219,8 +224,8 @@
   /**********Alert******************/
 
   .alert{
-    background-color: var(--primary-color);
-    color: #333;
+    background-color: var(--secondary-color);
+    color: white;
     padding: 15px;
     position: fixed;
     top: 0;
