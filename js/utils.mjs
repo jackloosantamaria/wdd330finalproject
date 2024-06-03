@@ -17,7 +17,7 @@ export function renderWithTemplate(template, parentElement, data, callback) {
   
 export async function loadHeaderFooter() {
     try {
-      const pathParts = window.location.pathname.split('/');
+      //const pathParts = window.location.pathname.split('/');
       // const basePath = pathParts.includes('country-list') ? '../../public/' : '../public/';
     
 
@@ -25,11 +25,7 @@ export async function loadHeaderFooter() {
       // const depth = pathParts.length - 1;
       // const basePath = '../'.repeat(depth - 1) + 'public/';
 
-      const depth = pathParts.length - 1;
-    
-    
-      const basePath = (depth === 1) ? './public/' : '../public/';
-      
+      const basePath = window.location.origin + '/public/';
       const headerTemplate = await loadTemplate(basePath + "header.html");
       const headerElement = document.querySelector("#main-header");
       const footerTemplate = await loadTemplate(basePath + "footer.html");
