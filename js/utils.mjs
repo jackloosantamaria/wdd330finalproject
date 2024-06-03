@@ -25,7 +25,10 @@ export async function loadHeaderFooter() {
       // const depth = pathParts.length - 1;
       // const basePath = '../'.repeat(depth - 1) + 'public/';
 
-      const basePath = pathParts.includes('country-list') ? '../public/' : '../public/';
+      const depth = pathParts.length - 1;
+    
+    
+      const basePath = (depth === 1) ? './public/' : '../public/';
       
       const headerTemplate = await loadTemplate(basePath + "header.html");
       const headerElement = document.querySelector("#main-header");
