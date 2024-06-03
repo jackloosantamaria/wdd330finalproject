@@ -1,32 +1,29 @@
 //get list of countries in favorites
 import { loadHeaderFooter } from "./utils.mjs";
-export function getFavorites() {
-    return JSON.parse(localStorage.getItem('favorites')) || [];
-}
 
-// render list of favorite countries
-function renderFavorites() {
-    const favorites = getFavorites();
-    const favoriteListElement = document.getElementById('favorite-list');
-    favoriteListElement.innerHTML = '';
+document.addEventListener("DOMContentLoaded", function() {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-    favorites.forEach(country => {
-        const countryItem = document.createElement('div');
-        countryItem.classList.add('country-item');
+    const favoriteList = document.getElementById("favorite-list");
+    favoriteList.innerHTML = ""; // Limpiar la lista de favoritos antes de mostrar los nuevos datos
 
-        const countryName = document.createElement('h3');
-        countryName.textContent = country.name;
-        countryItem.appendChild(countryName);
+    favorites.forEach(favorite => {
+        const favoriteItem = document.createElement("div");
+        favoriteItem.classList.add("favorite");
 
-        const countryImage = document.createElement('img');
-        countryImage.src = country.image;
-        countryImage.alt = `${country.name} icon`;
-        countryItem.appendChild(countryImage);
+        // Aquí puedes construir la estructura HTML para mostrar cada elemento favorito
+        favoriteItem.innerHTML = `
+            <h3>${favorite.name}</h3>
+            <p>Location: ${favorite.location}</p>
+            <p><img src="${favorite.image}" alt="${favorite.name}"></p>
+            <!-- Agrega más información si es necesario -->
+        `;
 
-        favoriteListElement.appendChild(countryItem);
+        favoriteList.appendChild(favoriteItem);
     });
-}
+});
 
-//call function
-document.addEventListener('DOMContentLoaded', renderFavorites);
+
+loadHeaderFooter();
+
 

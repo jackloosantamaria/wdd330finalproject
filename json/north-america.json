@@ -17,5 +17,170 @@
             "lat": "19.4326",
             "lon": "-99.1332"
         }
+    ],
+
+    "temples":[
+        {
+            "name": "Calgary Alberta Temple",
+            "location": "Canada",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/800x500/calgary-alberta-temple-before-open-house-1033408-wallpaper.jpg",
+            "lat": "51.0914",
+            "lon": "-113.9543"
+        },
+
+        {
+            "name": "Mexico City Mexico Temple",
+            "location": "Mexico",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/800x500/mexico-city-temple-exterior-1518357-wallpaper.jpg",
+            "lat": "19.4054",
+            "lon": "-99.1833"
+        },
+
+
+        {
+            "name": "Rio de Janeiro Brazil Temple",
+            "location": "Brazil",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rio-de-janeiro-brazil/800x500/4-5aa85fb6f20a17f629302687710142328a707d4d.jpeg",
+            "lat": "-22.9731",
+            "lon": "-43.3655"
+        },
+
+        {
+            "name": "Buenos Aires Argentina Temple",
+            "location": "Argentina",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-aires-argentina-temple-lds-236979-wallpaper.jpg",
+            "lat": "-34.5413",
+            "lon": "-58.7158"
+        },
+
+        {
+            "name": "Santiago Chile Temple",
+            "location": "Chile",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/800x500/santiago-chile-mormon-temple-907555-wallpaper.jpg",
+            "lat": "-33.3807",
+            "lon": "-70.5393"
+        },
+
+        {
+            "name": "Lima Peru Temple",
+            "location": "Peru",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/800x500/lima-peru-mormon-temple-911889-wallpaper.jpg",
+            "lat": "-12.0743",
+            "lon": "-76.9472"
+        },
+
+        {
+            "name": "Bogotá Colombia Temple",
+            "location": "Colombia",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/800x500/bogota-colombia-temple-lds-1029726-wallpaper.jpg",
+            "lat": "4.7052",
+            "lon": "-74.0424"
+        },
+
+        {
+            "name": "Caracas Venezuela Temple",
+            "location": "Venezuela",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/800x450/caracas_venezuela_temple_detail_1691066_2400x1200.jpg",
+            "lat": "10.5000",
+            "lon": "-66.9167"
+        },
+
+        {
+            "name": "Paris France Temple",
+            "location": "France",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/800x500/Paris-Temple02.jpg",
+            "lat": "48.8269",
+            "lon": "2.1322"
+        },
+
+        {
+            "name": "Frankfurt Germany Temple",
+            "location": "Germany",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/frankfurt-germany/800x500/frankfurt-germany-temple-lds-82734-wallpaper.jpg",
+            "lat": "50.1073",
+            "lon": "8.6671"
+        },
+
+        {
+            "name": "Freiberg Germany Temple",
+            "location": "Germany",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/freiberg-germany/800x500/freiberg-germany-temple-lds-664670-wallpaper.jpg",
+            "lat": "50.9074",
+            "lon": "13.3559"
+        },
+
+        {
+            "name": "Rome Italy Temple",
+            "location": "Italy",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/800x500/1-Rome-Temple-2160936.jpg",
+            "lat": "41.8419",
+            "lon": "12.5736"
+        },
+
+        {
+            "name": "Madrid Spain Temple",
+            "location": "Spain",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/800x500/madrid-spain-mormon-temple-954942-wallpaper.jpg",
+            "lat": "40.4602",
+            "lon": "-3.8666"
+        },
+
+        {
+            "name": "The Hague Netherlands Temple",
+            "location": "Netherlands",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/the-hague-netherlands/2019/800x500/1-hague-netherlands-temple-2196995.jpg",
+            "lat": "52.0856",
+            "lon": "4.3239"
+        },
+
+        {
+            "name": "None",
+            "location": "Belgium",
+            "image": "#"
+        },
+
+        {
+            "name": "Hong Kong China Temple",
+            "location": "China",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/800x1280/hong-kong-china-temple-lds-39528-wallpaper.jpg",
+            "lat": "22.2793",
+            "lon": "114.1588"
+        },
+
+        {
+            "name": "Tokyo Japan Temple",
+            "location": "Japan",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/800x1280/tokyo_japan_temple-main.jpeg",
+            "lat": "35.6586",
+            "lon": "139.7454"
+        },
+
+        {
+            "name": "None",
+            "location": "India",
+            "image": "#"
+        },
+
+        {
+            "name": "Seoul Korea Temple",
+            "location": "South Korea",
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/800x500/seoul-korea-temple-lds-424784-wallpaper.jpg",
+            "lat": "37.5244",
+            "lon": "126.9800"
+        },
+
+        {
+            "name": "Bangkok Thailand Temple",
+            "location": "Thailand",
+            "image": "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037-main.jpg",
+            "lat": "13.7470",
+            "lon": "100.5610"
+        },
+
+        {
+            "name": "None",
+            "location": "Vietnam",
+            "image": "#"
+        }
     ]
 }
