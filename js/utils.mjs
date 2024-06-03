@@ -18,14 +18,23 @@ export function renderWithTemplate(template, parentElement, data, callback) {
 export async function loadHeaderFooter() {
     try {
       const pathParts = window.location.pathname.split('/');
-      // const basePath = pathParts.includes('country-list') ? '../../public/' : '../public/';
-    
+      const basePath = pathParts.includes('country-list') ? '../../public/' : '../public/';
+      const headerTemplate = await loadTemplate(basePath + "header.html");
+      const headerElement = document.querySelector("#main-header");
+      const footerTemplate = await loadTemplate(basePath + "footer.html");
+      const footerElement = document.querySelector("#main-footer");
+  
+      renderWithTemplate(headerTemplate, headerElement);
+      renderWithTemplate(footerTemplate, footerElement);
+    } catch (error) {
+      console.error('Error loading header or footer:', error);
+    }
+  }
 
-      // const pathParts = window.location.pathname.split('/');
-      // const depth = pathParts.length - 1;
-      // const basePath = '../'.repeat(depth - 1) + 'public/';
-
-      const basePath = pathParts.includes('country-list') ? '../public/' : '../../public/';
+  export async function loadHeaderFooterMainHtml() {
+    try {
+      const pathParts = window.location.pathname.split('/');
+      const basePath = pathParts.includes('country-list') ? '../public/' : './public/';
       const headerTemplate = await loadTemplate(basePath + "header.html");
       const headerElement = document.querySelector("#main-header");
       const footerTemplate = await loadTemplate(basePath + "footer.html");
@@ -40,6 +49,7 @@ export async function loadHeaderFooter() {
   
   document.addEventListener("DOMContentLoaded", () => {
     loadHeaderFooter();
+    loadHeaderFooterMainHtml();
   });
 
   

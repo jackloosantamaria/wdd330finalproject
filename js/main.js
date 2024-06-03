@@ -1,7 +1,7 @@
-import {loadHeaderFooter} from "./utils.mjs";
+import {loadHeaderFooterMainHtml} from "./utils.mjs";
 
 
-loadHeaderFooter();
+loadHeaderFooterMainHtml();
 
 
 console.log("Newsletter script loaded");
